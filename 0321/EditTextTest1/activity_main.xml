@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아이디를 입력하세요"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="14dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="14dp"/>
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전화번호를 입력하세요"
+        android:inputType="phone"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="14dp"/>
+
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:onClick="onSignupButtonClick"
+        android:layout_margin="14dp"/>
+
+    <TextView
+        android:id="@+id/textViewUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="14dp"/>
+
+</LinearLayout>
