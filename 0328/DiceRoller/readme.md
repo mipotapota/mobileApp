@@ -1,2 +1,3 @@
 # 주사위 게임 작성하기
-## 
+## https://www.youtube.com/watch?v=i3dSIQb9BMw을 참고하며 자바로 변환하여 만듬
+### ![스크린샷 2025-04-02 233155](https://github.com/user-attachments/assets/5bb9a2bd-1bad-44f5-94c0-d665062c21dc)![스크린샷 2025-04-02 233215](https://github.com/user-attachments/assets/eb3a5ffa-006e-4505-bd05-1ee88d47044d)![스크린샷 2025-04-02 233228](https://github.com/user-attachments/assets/cca73d09-bd7f-45d0-928b-eb202b257257)![스크린샷 2025-04-02 233239](https://github.com/user-attachments/assets/ec69fd97-4e8b-4ed6-b43f-537f4ef6530d)![스크린샷 2025-04-02 233256](https://github.com/user-attachments/assets/c5815f5e-bf6b-43ae-b8ac-79328a408372)![스크린샷 2025-04-02 233309](https://github.com/user-attachments/assets/2eab4208-9411-4414-9cd7-15461bf71d35)
