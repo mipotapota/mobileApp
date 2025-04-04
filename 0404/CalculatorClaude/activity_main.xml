@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:background="#4CAF50"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Number 1"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_text_border"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/editNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Number 2"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_text_border"
+        android:padding="12dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="1"
+        android:rowCount="4">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="18sp"/>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:background="@drawable/edit_text_border"
+        android:padding="12dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>
