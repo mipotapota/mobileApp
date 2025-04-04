@@ -11,7 +11,7 @@
 - 오류 메시지 표시
 
 ## 스크린샷
-![스크린샷 2025-04-04 162700](https://github.com/user-attachments/assets/72d913f7-c90a-42db-98fe-365260c51a50)
+![스크린샷 2025-04-04 162700](https://github.com/user-attachments/assets/72d913f7-c90a-42db-98fe-365260c51a50)![스크린샷 2025-04-04 163253](https://github.com/user-attachments/assets/6b975d59-b66c-4ea7-bba0-36451006f1ea)
 ## ![스크린샷 2025-04-04 162715](https://github.com/user-attachments/assets/183702ec-21e0-4111-954f-ba8bc304d653)![스크린샷 2025-04-04 162724](https://github.com/user-attachments/assets/4a2cf0e6-576c-4ec7-9425-c8e866b3a37a)![스크린샷 2025-04-04 162730](https://github.com/user-attachments/assets/10eb3974-66f1-4ea9-894c-45cb77cbe8ad)![스크린샷 2025-04-04 162737](https://github.com/user-attachments/assets/dd8e3a37-56f0-4d97-bbbc-8212b8dfb47e)
 
 ## 구현 방법
