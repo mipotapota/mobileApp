@@ -2,10 +2,10 @@
 
 ### ![스크린샷 2025-04-11 221537](https://github.com/user-attachments/assets/efab8743-d6f7-4a3e-81b2-df3e7eb7434b) 
 ### 3초뒤에 로그인 화면으로 넘어간다. 
-### ![스크린샷 2025-04-11 222009](https://github.com/user-attachments/assets/3c7fe0a1-3b69-4eaf-9a6a-8bf62b5f4b55) ![스크린샷 2025-04-11 222021](https://github.com/user-attachments/assets/3707273e-7e09-4700-b007-91bc2869ba87) 
+### ![스크린샷 2025-04-11 222009](https://github.com/user-attachments/assets/3c7fe0a1-3b69-4eaf-9a6a-8bf62b5f4b55)
 ### ![스크린샷 2025-04-11 223541](https://github.com/user-attachments/assets/62bbe837-04f6-45bb-b5a0-9572474e4a44) ![스크린샷 2025-04-11 223549](https://github.com/user-attachments/assets/443bc28f-6283-4f39-9fe8-78b426f9463a)
 ### 로그인 정보가 잘못되면 로그인이 실패한다.
-### ![스크린샷 2025-04-11 222028](https://github.com/user-attachments/assets/01b45a3b-356d-40b2-940a-9da5affb4182) 
+###  ![스크린샷 2025-04-11 222021](https://github.com/user-attachments/assets/3707273e-7e09-4700-b007-91bc2869ba87) ![스크린샷 2025-04-11 222028](https://github.com/user-attachments/assets/01b45a3b-356d-40b2-940a-9da5affb4182) 
 ### 로그인이 완료되면 2초뒤에 다음 화면으로 전환된다. 
 ###  private boolean isUserValid(String username, String password) {
 ###     // 실제로는 여기에서 서버 또는 로컬 데이터베이스를 통해 인증을 확인해야 한다.
