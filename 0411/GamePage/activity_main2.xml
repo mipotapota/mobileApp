@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="이것은 교수님께서 6장 이미지를 올려주시지 않아서 인터넷에서 무료게임 이미지를 검색하여 다운받았습니다."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="22dp"/>
+
+</LinearLayout>
