@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">간단한 그림판</string>
-    <string name="paint">페인트</string>
-    <string name="brush">브러시</string>
-    <string name="erase">지우개</string>
-    <string name="new_drawing">새 그림</string>
-</resources>
