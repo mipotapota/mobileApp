@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_brush"
+        android:icon="@drawable/ic_brush"
+        android:title="@string/brush"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_erase"
+        android:icon="@drawable/ic_eraser"
+        android:title="@string/erase"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_new"
+        android:title="@string/new_drawing"
+        app:showAsAction="ifRoom" />
+</menu>
