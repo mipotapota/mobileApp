@@ -13,8 +13,8 @@
 - 💾 **메모리 최적화**: 대용량 이미지도 안전하게 로드
 
 ## 📱 스크린샷
-### ![스크린샷 2025-05-25 220720](https://github.com/user-attachments/assets/c9a5ae8a-fc72-4d6e-b366-ff82689e7959)
-### ![스크린샷 2025-05-25 220729](https://github.com/user-attachments/assets/95a44c74-d5a3-4e19-a6a3-2d59e4a6531a)![스크린샷 2025-05-25 220744](https://github.com/user-attachments/assets/221da748-6e50-4e6b-9464-17af79a07cc0)
+### ![스크린샷 2025-05-25 220720](https://github.com/user-attachments/assets/c9a5ae8a-fc72-4d6e-b366-ff82689e7959)![스크린샷 2025-05-25 220729](https://github.com/user-attachments/assets/95a44c74-d5a3-4e19-a6a3-2d59e4a6531a)
+### ![스크린샷 2025-05-25 220744](https://github.com/user-attachments/assets/221da748-6e50-4e6b-9464-17af79a07cc0)![스크린샷 2025-05-25 221503](https://github.com/user-attachments/assets/76ad27ab-a3c9-4503-9d34-3208a7507fd1)
 
 ## 🛠️ 기술 스택
 
