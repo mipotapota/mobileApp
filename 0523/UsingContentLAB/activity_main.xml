@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    tools:context=".MainActivity">
+
+    <!-- 상단 네비게이션 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:elevation="2dp">
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:onClick="displayPreviousImage"
+            android:text="◀ PREVIOUS"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_previous"
+            android:layout_marginEnd="8dp"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:onClick="displayNextImage"
+            android:text="NEXT ▶"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_next"
+            android:layout_marginStart="8dp"
+            android:enabled="false" />
+    </LinearLayout>
+
+    <!-- 이미지 카운터 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/imageCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이미지가 없습니다"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/imageInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <!-- 메인 이미지 표시 영역 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:scaleType="centerInside"
+            android:background="#f9f9f9"
+            android:contentDescription="갤러리 이미지" />
+
+        <!-- 로딩 또는 빈 상태 표시 -->
+        <TextView
+            android:id="@+id/emptyStateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이미지를 불러오는 중..."
+            android:textSize="16sp"
+            android:textColor="#888888"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- 하단 제어 버튼들 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="#ffffff"
+        android:elevation="2dp">
+
+        <Button
+            android:id="@+id/refreshButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:onClick="refreshImages"
+            android:text="🔄 새로고침"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_refresh"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/permissionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:onClick="requestPermissionsManually"
+            android:text="🔐 권한 요청"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_permission"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
