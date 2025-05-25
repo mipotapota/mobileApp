@@ -18,6 +18,7 @@ Android 기기에 저장된 모든 동영상 파일을 검색하여 리스트로
 ## 🖼️ 스크린샷
 
 앱 실행 시 기기에 저장된 동영상 파일들이 다음과 같이 표시됩니다:
+![스크린샷 2025-05-25 212215](https://github.com/user-attachments/assets/55838848-f008-4013-ad1a-290da205b5c1)
 
 ```
 All Video Files
