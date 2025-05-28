@@ -114,3 +114,6 @@ src/main/res/layout/
 - 이미지 추가 기능
 - 백업/복원 기능
 - 더 나은 UI/UX 디자인
+
+
+##### ![스크린샷 2025-05-28 215357](https://github.com/user-attachments/assets/7e143ed8-f3eb-4d0b-8bed-41634519831f)
