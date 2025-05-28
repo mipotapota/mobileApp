@@ -116,7 +116,8 @@ src/main/res/layout/
 - 더 나은 UI/UX 디자인
 
 
-##### ![스크린샷 2025-05-28 215225](https://github.com/user-attachments/assets/204df4a5-30fa-46e1-8c73-4d4f7781ce2b)![스크린샷 2025-05-28 215252](https://github.com/user-attachments/assets/b740ec29-e51e-48c7-8268-aeac8a6928c8)![스크린샷 2025-05-28 215300](https://github.com/user-attachments/assets/679c9273-f8d7-48c7-bd2e-40193271baf6)![스크린샷 2025-05-28 215324](https://github.com/user-attachments/assets/1a869b05-13f7-4405-8af8-7ea5445bdd49)![스크린샷 2025-05-28 215334](https://github.com/user-attachments/assets/78ad7fda-1b3d-47f9-b3b3-3b57ee787146)![스크린샷 2025-05-28 215341](https://github.com/user-attachments/assets/ee6c5109-b5c2-4e34-9422-0bd082d280b9)![스크린샷 2025-05-28 215350](https://github.com/user-attachments/assets/74b052d2-7917-41b4-b2a5-58606d70abdf)![스크린샷 2025-05-28 215357](https://github.com/user-attachments/assets/1ba3beec-7880-4dfd-b938-0598d16c2ca8)
+##### ![스크린샷 2025-05-28 215225](https://github.com/user-attachments/assets/204df4a5-30fa-46e1-8c73-4d4f7781ce2b)![스크린샷 2025-05-28 215252](https://github.com/user-attachments/assets/b740ec29-e51e-48c7-8268-aeac8a6928c8)
+##### ![스크린샷 2025-05-28 215300](https://github.com/user-attachments/assets/679c9273-f8d7-48c7-bd2e-40193271baf6)![스크린샷 2025-05-28 215324](https://github.com/user-attachments/assets/1a869b05-13f7-4405-8af8-7ea5445bdd49)![스크린샷 2025-05-28 215334](https://github.com/user-attachments/assets/78ad7fda-1b3d-47f9-b3b3-3b57ee787146)![스크린샷 2025-05-28 215341](https://github.com/user-attachments/assets/ee6c5109-b5c2-4e34-9422-0bd082d280b9)![스크린샷 2025-05-28 215350](https://github.com/user-attachments/assets/74b052d2-7917-41b4-b2a5-58606d70abdf)![스크린샷 2025-05-28 215357](https://github.com/user-attachments/assets/1ba3beec-7880-4dfd-b938-0598d16c2ca8)
 
 
 
