@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="영화 상세 정보"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:background="#4CAF50"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:padding="8dp"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/yearText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:padding="8dp"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/directorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:padding="8dp"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/ratingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:padding="8dp"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/countryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"
+        android:background="#f0f0f0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수정"
+            android:textSize="16sp"
+            android:background="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="8dp"
+            android:minWidth="100dp" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:textSize="16sp"
+            android:background="#f44336"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="8dp"
+            android:minWidth="100dp" />
+
+    </LinearLayout>
+</LinearLayout>
