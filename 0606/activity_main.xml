@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- 앱 타이틀 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lumaire"
+        android:textSize="44sp"
+        android:textColor="#FF6B9D"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:padding="16dp"
+        android:layout_marginTop="24sp"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="44"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="루메르"
+        android:textSize="16sp"
+        android:textColor="#FF93AC"
+        android:alpha="0.9"
+        android:layout_marginTop="-13dp"
+        android:layout_marginBottom="48dp"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="44" />
+
+    <!-- 버튼 컨테이너 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- 첫 번째 줄 버튼들 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <android.widget.Button
+                android:id="@+id/btn_menu1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="오늘의 한마디"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="@drawable/primary_button_style"
+                android:elevation="8dp"
+                android:stateListAnimator="@null" />
+
+            <android.widget.Button
+                android:id="@+id/btn_menu2"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="오늘의 기분"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="@drawable/primary_button_style"
+                android:elevation="8dp"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+        <!-- 두 번째 줄 버튼들 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.widget.Button
+                android:id="@+id/btn_menu3"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="메트로놈"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="@drawable/primary_button_style"
+                android:elevation="8dp"
+                android:stateListAnimator="@null" />
+
+            <android.widget.Button
+                android:id="@+id/btn_menu4"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Vocal Pitch"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="@drawable/primary_button_style"
+                android:elevation="8dp"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 앱 로고 -->
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/lumaire"
+        android:scaleType="centerInside"
+        android:alpha="0.8" />
+
+    <!-- 하단 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@Sanpochamu"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:alpha="0.7" />
+
+</LinearLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="24dp">
+
+    <!-- 헤더 (통일된 스타일) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <android.widget.ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/circular_button"
+            android:src="@android:drawable/ic_menu_revert"
+            android:layout_marginEnd="16dp"
+            android:padding="0dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="메트로놈"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+    </LinearLayout>
+
+    <!-- 컨텐츠 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- 진자 애니메이션 -->
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:id="@+id/iv_pendulum"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/chamuchmau"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_clip"
+                android:clipToOutline="true"
+                android:contentDescription="메트로놈 진자" />
+        </RelativeLayout>
+
+        <!-- BPM 디스플레이 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_bpm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:textSize="48sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" BPM"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:alpha="0.8"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- BPM 조절 버튼 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <android.widget.Button
+                android:id="@+id/btn_minus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/small_button_style"
+                android:layout_marginEnd="16dp"
+                android:padding="0dp"/>
+
+            <android.widget.Button
+                android:id="@+id/btn_plus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/small_button_style"
+                android:layout_marginStart="16dp"
+                android:padding="0dp"/>
+        </LinearLayout>
+
+        <!-- BPM 슬라이더 -->
+        <android.widget.SeekBar
+            android:id="@+id/seekbar_bpm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:progressTint="#FF93AC"
+            android:thumbTint="#FFFFFF" />
+
+        <!-- 박자 정보 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="박자"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:alpha="0.8" />
+
+                <android.widget.Button
+                    android:id="@+id/btn_time_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:minWidth="80dp"
+                    android:text="4/4"
+                    android:textSize="16sp"
+                    android:textColor="#FF93AC"
+                    android:background="@drawable/small_button_style"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="박자 카운터"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:alpha="0.8" />
+
+                <TextView
+                    android:id="@+id/tv_beat_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 / 4"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 탭 템포 안내 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="탭 템포: 4번 이상 탭하여 BPM 설정"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:alpha="0.7"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+    <!-- 하단 컨트롤 버튼들 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.widget.Button
+            android:id="@+id/btn_play_pause"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="시작"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/primary_button_style"
+            android:layout_marginEnd="8dp"
+            android:elevation="8dp"
+            android:stateListAnimator="@null" />
+
+        <android.widget.Button
+            android:id="@+id/btn_tap"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="탭 템포"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/primary_button_style"
+            android:layout_marginStart="8dp"
+            android:elevation="8dp"
+            android:stateListAnimator="@null" />
+    </LinearLayout>
+
+</LinearLayout>

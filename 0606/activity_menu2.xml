@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 헤더 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <android.widget.ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/circular_button"
+                android:src="@android:drawable/ic_menu_revert"
+                android:layout_marginEnd="16dp"
+                android:padding="0dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="오늘의 기분"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <android.widget.Button
+                android:id="@+id/btn_view_records"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="📊"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/circular_button"
+                android:contentDescription="기록 보기"
+                android:padding="0dp" />
+        </LinearLayout>
+
+        <!-- 날짜 -->
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="22dp"
+            android:alpha="0.9" />
+
+        <!-- 기분 선택 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오늘의 기분은 어떠신가요?"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <ImageButton
+                android:id="@+id/btn_mood_1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/mood_button_selector"
+                android:src="@drawable/verysad"
+                android:scaleType="centerCrop"
+                android:contentDescription="울음"
+                android:cropToPadding="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background" />
+
+            <ImageButton
+                android:id="@+id/btn_mood_2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/mood_button_selector"
+                android:src="@drawable/littlesad"
+                android:scaleType="centerCrop"
+                android:contentDescription="슬픈 기분"
+                android:cropToPadding="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_mood_3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/mood_button_selector"
+                android:src="@drawable/norm"
+                android:scaleType="centerCrop"
+                android:contentDescription="soso"
+                android:cropToPadding="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_mood_4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/mood_button_selector"
+                android:src="@drawable/hep"
+                android:scaleType="centerCrop"
+                android:contentDescription="기쁨"
+                android:cropToPadding="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background" />
+
+            <ImageButton
+                android:id="@+id/btn_mood_5"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/mood_button_selector"
+                android:src="@drawable/sugi"
+                android:scaleType="centerCrop"
+                android:contentDescription="매우기쁨"
+                android:cropToPadding="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background"
+                />
+        </LinearLayout>
+
+        <!-- 기분 설명 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기분에 대해 자세히 써보세요"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_mood_description"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/edittext_style"
+            android:hint="오늘 기분이 어떤지 설명해보세요..."
+            android:textColorHint="#B0FFFFFF"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginBottom="20dp"
+            android:inputType="textMultiLine" />
+
+        <!-- 오늘 있었던 일 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="오늘 있었던 일"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_today_events"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edittext_style"
+            android:hint="오늘 있었던 특별한 일들을 기록해보세요..."
+            android:textColorHint="#B0FFFFFF"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginBottom="20dp"
+            android:inputType="textMultiLine" />
+
+        <!-- 감정과 느낌 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오늘의 감정과 느낌"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_feelings"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edittext_style"
+            android:hint="오늘 느꼈던 감정들을 자유롭게 표현해보세요..."
+            android:textColorHint="#B0FFFFFF"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginBottom="20dp"
+            android:inputType="textMultiLine" />
+
+        <!-- 저장 버튼 -->
+        <android.widget.Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="저장하기"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/primary_button_style"
+            android:elevation="8dp"
+            android:stateListAnimator="@null" />
+    </LinearLayout>
+</ScrollView>

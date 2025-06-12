@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- 상단 아이콘 영역 (뒤로가기 버튼과 함께) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp">
+
+        <!-- 뒤로가기 버튼 (왼쪽 끝) -->
+        <android.widget.ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/circular_button"
+            android:src="@android:drawable/ic_menu_revert"
+            android:layout_marginEnd="16dp"
+            android:padding="0dp" />
+
+        <!-- 상단 아이콘 (중앙) -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_quote"
+            android:alpha="0.9" />
+
+    </RelativeLayout>
+
+    <!-- 제목 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 한마디"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신을 위한 특별한 조언"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:alpha="0.8"
+        android:layout_marginBottom="20dp" />
+
+    <!-- 명언 카드 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FFFFFF"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="31dp"
+            android:gravity="center">
+
+            <!-- 따옴표 아이콘 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❝"
+                android:textSize="48sp"
+                android:textColor="#FF93AC"
+                android:layout_marginBottom="16dp"
+                android:alpha="0.3" />
+
+            <!-- 명언 텍스트 -->
+            <TextView
+                android:id="@+id/tv_advice_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="성공은 준비와 기회가 만나는 지점에서 일어난다."
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:textAlignment="center"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="serif" />
+
+            <!-- 작가/출처 -->
+            <TextView
+                android:id="@+id/tv_advice_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 센세카 -"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:textStyle="italic"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 구분선 -->
+            <View
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:background="#FF93AC"
+                android:alpha="0.3"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- 음악 추천 카드 (초기에는 숨김) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <!-- 음악 아이콘 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎵"
+                android:textSize="24sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 오늘의 음악 제목 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 추천 음악"
+                android:textSize="14sp"
+                android:textColor="#FF93AC"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <!-- 음악 제목 -->
+            <TextView
+                android:id="@+id/tv_music_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp" />
+
+            <!-- 아티스트 -->
+            <TextView
+                android:id="@+id/tv_music_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="3dp" />
+
+            <!-- 장르 -->
+            <TextView
+                android:id="@+id/tv_music_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:background="@drawable/genre_background"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- 하단 여백 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="13dp"/>
+
+    <!-- 오늘의 추천 음악 버튼 -->
+    <android.widget.Button
+        android:id="@+id/btn_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎵 오늘의 추천 음악"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/primary_button_style"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:elevation="4dp" />
+
+</LinearLayout>

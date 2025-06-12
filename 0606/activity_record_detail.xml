@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 헤더 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- 뒤로가기 버튼 -->
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_revert"
+                android:background="@drawable/circular_button"
+                android:layout_marginEnd="16dp"
+                android:padding="0dp"
+                android:contentDescription="뒤로가기"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="기분 기록 상세"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- 수정: 편집 버튼 제거 - 빈 공간으로 대체 -->
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+        </LinearLayout>
+
+        <!-- 날짜 -->
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:alpha="0.9" />
+
+        <!-- 기분 표시 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오늘의 기분은 어떠신가요?"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <ImageButton
+                android:id="@+id/btn_mood_1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/mood_button_selector"
+                android:src="@drawable/verysad"
+                android:scaleType="centerCrop"
+                android:contentDescription="울음"
+                android:cropToPadding="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background" />
+
+            <ImageButton
+                android:id="@+id/btn_mood_2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/mood_button_selector"
+                android:src="@drawable/littlesad"
+                android:scaleType="centerCrop"
+                android:contentDescription="슬픈 기분"
+                android:cropToPadding="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_mood_3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/mood_button_selector"
+                android:src="@drawable/norm"
+                android:scaleType="centerCrop"
+                android:contentDescription="soso"
+                android:cropToPadding="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_mood_4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/mood_button_selector"
+                android:src="@drawable/hep"
+                android:scaleType="centerCrop"
+                android:contentDescription="기쁨"
+                android:cropToPadding="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background" />
+
+            <ImageButton
+                android:id="@+id/btn_mood_5"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/mood_button_selector"
+                android:src="@drawable/sugi"
+                android:scaleType="centerCrop"
+                android:contentDescription="매우기쁨"
+                android:cropToPadding="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background" />
+
+        </LinearLayout>
+
+        <!-- 기분 설명 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기분에 대해 자세히 써보세요"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_mood_description"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/edittext_style"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginBottom="24dp"
+            android:inputType="textMultiLine"
+            android:enabled="false" />
+
+        <!-- 오늘 있었던 일 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="오늘 있었던 일"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_today_events"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edittext_style"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginBottom="24dp"
+            android:inputType="textMultiLine"
+            android:enabled="false" />
+
+        <!-- 감정과 느낌 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오늘의 감정과 느낌"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_feelings"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edittext_style"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginBottom="32dp"
+            android:inputType="textMultiLine"
+            android:enabled="false" />
+
+        <!-- 하단 버튼들 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.widget.Button
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="삭제"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/primary_button_style"
+                android:elevation="8dp"
+                android:stateListAnimator="@null" />
+
+            <!-- 수정: 편집/저장 버튼 - 처음에는 "편집"으로 표시 -->
+            <android.widget.Button
+                android:id="@+id/btn_save_changes"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="편집"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/primary_button_style"
+                android:elevation="8dp"
+                android:stateListAnimator="@null" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
